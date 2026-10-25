@@ -20,6 +20,9 @@ jobs:
     - name: Unzip Project
       run: unzip -o LGL_Project.zip
 
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v3
       with:
